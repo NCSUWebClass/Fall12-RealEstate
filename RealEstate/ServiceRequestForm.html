@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>George Properties - Service Request Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+	<script type="text/javascript" src="./templates/topNav.js"></script>
+	<script type="text/javascript" src="./templates/sideNav.js"></script>
+	<script type="text/javascript" src="./templates/footer.js"></script>
+  </head>
+
+  <body onLoad="topNav(); sideNav(); footer();">
+
+	<div id="wrapper">
+		<div id="header">
+			<div id="topNav"></div>
+		</div><!-- header -->
+		
+		<div id="content">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div id="sideNav"></div>
+						<div class="span9">
+							<div class="hero-unit">
+						
+								<!-- Form for submitting a service request. Forwards information to "service_request_send.php" -->
+								
+								<p>Please address all maintenence requests as best as you can: </p> 
+
+								<form name ="service_request_form" method="post" action="ServiceRequestSend.php">
+								<table width="450px">
+								  <tr>
+									<td valign="top">
+									  <label for="first_name">First Name : *</label>
+									</td>
+									<td valign="top">
+									  <input type="text" name="first_name" maxlength="50" size="30">
+									</td>
+								</tr>
+
+								<tr>
+								<td valign="top">
+								  <label for="last_name">Last Name : *</label>
+								  </td>
+								  <td valign="top">
+									<input type="text" name="last_name" maxlength="50" size="30">
+								  </td>
+								</tr>
+								  
+								<tr>
+								  <td valign="top">
+									<label for="email"> Email Address : *</label>
+								  </td>
+								  <td valign="top">
+									<input type="text" name="email" maxlength="80" size="30">
+								  </td>
+								</tr>
+								  
+								<tr>
+								  <td valign="top">
+									<label for="telephone"> Telephone Number :</label>
+								  </td>
+								  <td valign="top">
+									<input type="text" name="telephone" maxlength="30" size="30">
+								  </td>
+								</tr>
+								  
+								<tr>
+								  <td valign="top">
+									<label for="comments"> Address the issue(s) : *</label>
+								  </td>
+								  <td valign = "top">
+									<textarea name="comments" maxlength="2500" cols="50" rows="20">
+									</textarea>
+								  </td>
+								</tr>
+								  
+								<tr>
+								  <td colspan="2" style="text-align:center">
+									<input type="submit" value="Submit"> 
+								  </td>
+								  </tr>
+								  </table>
+								</form>
+
+								<p>* are required fields</p>
+								
+								<!-- End of service request form content. -->
+								
+							</div><!-- hero-unit -->
+						</div><!-- span -->
+				</div><!-- row-fluid -->
+			</div><!-- container-fluid -->
+		</div><!-- content -->
+		<div id="footer">
+		</div><!-- footer -->
+	</div><!-- wrapper -->
+	
+	<div id="footer"></div>
+	
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
